@@ -1,0 +1,62 @@
+
+body {
+color:black;
+	font-family: "Montserrat";
+}
+
+.container {
+	border-radius: 20px;
+	-webkit-transition: 1.5s ease-in-out;
+	transition: 1.5s ease-in-out;
+	transform-style: preserve-3d;
+	background-color: #f1f2f6;
+}
+p{
+	color:black;
+}
+.side {
+
+position: relative;
+	text-align: center;
+	-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+	width: 100%;
+	transform-style: preserve-3d;
+}
+.content {
+	transform:scale(0.8);
+	line-height: 1.5em;
+}
+.front {
+	z-index: 2;
+}
+.back {
+	transform: rotateY(180deg);
+	z-index: 0;
+}
+.container:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+form {
+	text-align: left;
+}
+.back h1 {
+	margin: 0;
+}
+form input,
+form textarea {
+	padding: 5px;
+	width: 100%;
+	color: #fff;
+}
+form input[type="submit"] {
+	display: block;
+	width: auto;
+	margin: 10px auto;
+	padding: 5px 10px;
+	border: 3px solid #555;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+}
